@@ -1,0 +1,8 @@
+Botan: Crypto and TLS for Modern C++
+https://github.com/randombit/botan
+
+spdlog: Fast C++ logging library
+https://github.com/gabime/spdlog
+
+Catch2: Multi-paradigm test framework for C++
+https://github.com/catchorg/Catch2

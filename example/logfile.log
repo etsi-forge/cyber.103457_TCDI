@@ -1,0 +1,146 @@
+2022-07-26 14:19:01,413 - INFO - Starting ETSI103457 python client sample
+2022-07-26 14:19:01,430 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 14:19:01,431 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 14:19:01,432 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 14:21:17,949 - INFO - Starting ETSI103457 python client sample
+2022-07-26 14:21:17,954 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 14:21:17,955 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 14:21:17,957 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 14:21:25,868 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-26 16:25:19,989 - INFO - Starting ETSI103457 python client sample
+2022-07-26 16:25:20,053 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 16:25:20,056 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 16:25:20,057 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 16:25:46,031 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-26 16:26:21,975 - INFO - Starting ETSI103457 python client sample
+2022-07-26 16:26:21,983 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 16:26:21,987 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 16:26:21,989 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 16:26:31,381 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-26 16:27:49,781 - INFO - Starting ETSI103457 python client sample
+2022-07-26 16:27:49,803 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 16:27:49,806 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 16:27:49,808 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 16:27:57,156 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-26 16:35:05,662 - INFO - Starting ETSI103457 python client sample
+2022-07-26 16:35:05,668 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 16:35:05,668 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 16:35:05,668 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 16:35:14,383 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-26 16:35:42,347 - INFO - Starting ETSI103457 python client sample
+2022-07-26 16:35:42,352 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 16:35:42,353 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 16:35:42,353 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 16:35:51,202 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-26 16:36:27,009 - INFO - Starting ETSI103457 python client sample
+2022-07-26 16:36:27,017 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-26 16:36:27,017 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-26 16:36:27,017 - INFO - Client Key         [../../pki/client.key]
+2022-07-26 16:36:33,280 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2019-07-26 16:36:55,445 - INFO - Starting ETSI103457 python client sample
+2019-07-26 16:36:55,454 - INFO - Server Certificate [../../pki/server.crt]
+2019-07-26 16:36:55,454 - INFO - Client Certificate [../../pki/client.crt]
+2019-07-26 16:36:55,454 - INFO - Client Key         [../../pki/client.key]
+2019-07-26 16:37:01,776 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2019-07-26 16:37:14,448 - INFO - Starting ETSI103457 python client sample
+2019-07-26 16:37:14,454 - INFO - Server Certificate [../../pki/server.crt]
+2019-07-26 16:37:14,454 - INFO - Client Certificate [../../pki/client.crt]
+2019-07-26 16:37:14,454 - INFO - Client Key         [../../pki/client.key]
+2019-07-26 16:37:24,534 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2020-07-26 16:37:47,605 - INFO - Starting ETSI103457 python client sample
+2020-07-26 16:37:47,613 - INFO - Server Certificate [../../pki/server.crt]
+2020-07-26 16:37:47,614 - INFO - Client Certificate [../../pki/client.crt]
+2020-07-26 16:37:47,614 - INFO - Client Key         [../../pki/client.key]
+2020-07-26 16:37:54,951 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2020-07-26 16:37:55,058 - DEBUG - SSL Established. Peer: {'subject': ((('countryName', 'FR'),), (('stateOrProvinceName', 'Yvelines'),), (('localityName', 'Les Clayes sous Bois'),), (('organizationName', 'ATOS'),), (('organizationalUnitName', 'TW'),), (('commonName', 'etsi103457.sample'),), (('emailAddress', 'etsi103457@atos.net'),)), 'issuer': ((('countryName', 'FR'),), (('stateOrProvinceName', 'Yvelines'),), (('localityName', 'Les Clayes sous Bois'),), (('organizationName', 'ATOS'),), (('organizationalUnitName', 'TW'),), (('commonName', 'etsi103457.sample'),), (('emailAddress', 'etsi103457@atos.net'),)), 'version': 3, 'serialNumber': '645CC4FD8216FA432DAA47767C7F8C2B086A269F', 'notBefore': 'May  2 12:56:57 2020 GMT', 'notAfter': 'May  2 12:56:57 2021 GMT'}
+2020-07-26 16:37:55,058 - DEBUG - Message Length       [107]: b'6b00000000000000'
+2020-07-26 16:37:55,059 - DEBUG - Command              [b'02']
+2020-07-26 16:37:55,059 - DEBUG - LTD Id               [LTD ID]: b'02030006000000000000004c5444204944'
+2020-07-26 16:37:55,060 - DEBUG - LTD Role             [LTD Role]: b'04030008000000000000004c544420526f6c65'
+2020-07-26 16:37:55,060 - DEBUG - LTD Certificate Name [LTD Certificate Name]: b'05030014000000000000004c5444204365727469666963617465204e616d65'
+2020-07-26 16:37:55,060 - DEBUG - LTD Nonce            [LTD Nonce]: b'1b020009000000000000004c5444204e6f6e6365'
+2020-07-26 16:37:55,060 - DEBUG - LTD Data             [LTD Data]: b'1a020008000000000000004c54442044617461'
+2020-07-26 16:38:07,964 - DEBUG - [Dump Connection] requested
+2020-07-26 16:38:07,964 - DEBUG - Message Length       [1]: b'0100000000000000'
+2020-07-26 16:38:07,964 - DEBUG - Command              [b'58']
+2020-07-26 16:38:13,066 - DEBUG - [CreateSession] requested
+2020-07-26 16:38:13,067 - DEBUG - Message Length       [1]: b'0100000000000000'
+2020-07-26 16:38:13,067 - DEBUG - Command              [b'06']
+2020-07-26 16:38:13,116 - DEBUG - > Session Id: fc2df9f0-2252-4069-bc4c-8bfca76af655
+2020-07-26 16:38:16,838 - DEBUG - [CloseSession] requested
+2020-07-26 16:38:26,223 - DEBUG - [CreateSession] requested
+2020-07-26 16:38:26,226 - DEBUG - Message Length       [1]: b'0100000000000000'
+2020-07-26 16:38:26,227 - DEBUG - Command              [b'06']
+2020-07-26 16:38:26,315 - DEBUG - > Session Id: 514ae97f-1380-4e9d-8d20-5b5350cf03ad
+2020-07-26 16:38:48,238 - DEBUG - [CloseSession] requested
+2020-07-26 16:40:10,673 - INFO - Starting ETSI103457 python client sample
+2020-07-26 16:40:10,681 - INFO - Server Certificate [../../pki/server.crt]
+2020-07-26 16:40:10,682 - INFO - Client Certificate [../../pki/client.crt]
+2020-07-26 16:40:10,682 - INFO - Client Key         [../../pki/client.key]
+2020-07-26 16:40:17,874 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2020-07-26 16:40:17,975 - DEBUG - SSL Established. Peer: {'subject': ((('countryName', 'FR'),), (('stateOrProvinceName', 'Yvelines'),), (('localityName', 'Les Clayes sous Bois'),), (('organizationName', 'ATOS'),), (('organizationalUnitName', 'TW'),), (('commonName', 'etsi103457.sample'),), (('emailAddress', 'etsi103457@atos.net'),)), 'issuer': ((('countryName', 'FR'),), (('stateOrProvinceName', 'Yvelines'),), (('localityName', 'Les Clayes sous Bois'),), (('organizationName', 'ATOS'),), (('organizationalUnitName', 'TW'),), (('commonName', 'etsi103457.sample'),), (('emailAddress', 'etsi103457@atos.net'),)), 'version': 3, 'serialNumber': '645CC4FD8216FA432DAA47767C7F8C2B086A269F', 'notBefore': 'May  2 12:56:57 2020 GMT', 'notAfter': 'May  2 12:56:57 2021 GMT'}
+2020-07-26 16:40:17,975 - DEBUG - Message Length       [107]: b'6b00000000000000'
+2020-07-26 16:40:17,976 - DEBUG - Command              [b'02']
+2020-07-26 16:40:17,976 - DEBUG - LTD Id               [LTD ID]: b'02030006000000000000004c5444204944'
+2020-07-26 16:40:17,976 - DEBUG - LTD Role             [LTD Role]: b'04030008000000000000004c544420526f6c65'
+2020-07-26 16:40:17,976 - DEBUG - LTD Certificate Name [LTD Certificate Name]: b'05030014000000000000004c5444204365727469666963617465204e616d65'
+2020-07-26 16:40:17,976 - DEBUG - LTD Nonce            [LTD Nonce]: b'1b020009000000000000004c5444204e6f6e6365'
+2020-07-26 16:40:17,976 - DEBUG - LTD Data             [LTD Data]: b'1a020008000000000000004c54442044617461'
+2020-07-26 16:40:19,339 - DEBUG - [CreateSession] requested
+2020-07-26 16:40:19,341 - DEBUG - Message Length       [1]: b'0100000000000000'
+2020-07-26 16:40:19,341 - DEBUG - Command              [b'06']
+2020-07-26 16:40:19,426 - DEBUG - > Session Id: ac5f2c0e-8b28-4cdd-87b6-8d1e3c1c1408
+2020-07-26 16:40:20,210 - DEBUG - [CloseSession] requested
+2020-07-26 16:43:30,101 - INFO - Starting ETSI103457 python client sample
+2020-07-26 16:43:30,108 - INFO - Server Certificate [../../pki/server.crt]
+2020-07-26 16:43:30,108 - INFO - Client Certificate [../../pki/client.crt]
+2020-07-26 16:43:30,108 - INFO - Client Key         [../../pki/client.key]
+2020-07-26 16:43:37,547 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2020-07-26 16:43:37,646 - DEBUG - SSL Established. Peer: {'subject': ((('countryName', 'FR'),), (('stateOrProvinceName', 'Yvelines'),), (('localityName', 'Les Clayes sous Bois'),), (('organizationName', 'ATOS'),), (('organizationalUnitName', 'TW'),), (('commonName', 'etsi103457.sample'),), (('emailAddress', 'etsi103457@atos.net'),)), 'issuer': ((('countryName', 'FR'),), (('stateOrProvinceName', 'Yvelines'),), (('localityName', 'Les Clayes sous Bois'),), (('organizationName', 'ATOS'),), (('organizationalUnitName', 'TW'),), (('commonName', 'etsi103457.sample'),), (('emailAddress', 'etsi103457@atos.net'),)), 'version': 3, 'serialNumber': '645CC4FD8216FA432DAA47767C7F8C2B086A269F', 'notBefore': 'May  2 12:56:57 2020 GMT', 'notAfter': 'May  2 12:56:57 2021 GMT'}
+2020-07-26 16:43:37,647 - DEBUG - Message Length       [107]: b'6b00000000000000'
+2020-07-26 16:43:37,647 - DEBUG - Command              [b'02']
+2020-07-26 16:43:37,647 - DEBUG - LTD Id               [LTD ID]: b'02030006000000000000004c5444204944'
+2020-07-26 16:43:37,647 - DEBUG - LTD Role             [LTD Role]: b'04030008000000000000004c544420526f6c65'
+2020-07-26 16:43:37,647 - DEBUG - LTD Certificate Name [LTD Certificate Name]: b'05030014000000000000004c5444204365727469666963617465204e616d65'
+2020-07-26 16:43:37,648 - DEBUG - LTD Nonce            [LTD Nonce]: b'1b020009000000000000004c5444204e6f6e6365'
+2020-07-26 16:43:37,648 - DEBUG - LTD Data             [LTD Data]: b'1a020008000000000000004c54442044617461'
+2020-07-26 16:43:39,479 - DEBUG - [CreateSession] requested
+2020-07-26 16:43:39,481 - DEBUG - Message Length       [1]: b'0100000000000000'
+2020-07-26 16:43:39,481 - DEBUG - Command              [b'06']
+2020-07-26 16:43:39,575 - DEBUG - > Session Id: 309f87ed-4d7a-4322-8ba3-d312eb5dd201
+2020-07-26 16:43:41,233 - DEBUG - [CloseSession] requested
+2020-07-26 16:43:41,235 - DEBUG - Message Length       [48]: b'3000000000000000'
+2020-07-26 16:43:41,235 - DEBUG - Command              [b'08']
+2020-07-26 16:43:41,235 - DEBUG - Session Id           [309f87ed-4d7a-4322-8ba3-d312eb5dd201]: b'070200240000000000000033303966383765642d346437612d343332322d386261332d643331326562356464323031'
+2020-07-26 16:43:41,277 - DEBUG - > Command type response received: TD_CLOSESESSION_RSP
+2020-07-26 16:43:41,320 - DEBUG - STATUS CODE [0]: Success
+2019-07-27 18:55:45,737 - INFO - Starting ETSI103457 python client sample
+2019-07-27 18:55:45,749 - INFO - Server Certificate [../../pki/server.crt]
+2019-07-27 18:55:45,749 - INFO - Client Certificate [../../pki/client.crt]
+2019-07-27 18:55:45,749 - INFO - Client Key         [../../pki/client.key]
+2019-07-27 18:55:53,506 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2019-07-27 18:56:19,229 - INFO - Starting ETSI103457 python client sample
+2019-07-27 18:56:19,238 - INFO - Server Certificate [../../pki/server.crt]
+2019-07-27 18:56:19,238 - INFO - Client Certificate [../../pki/client.crt]
+2019-07-27 18:56:19,238 - INFO - Client Key         [../../pki/client.key]
+2019-07-27 18:56:25,595 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2019-07-27 18:57:06,559 - INFO - Starting ETSI103457 python client sample
+2019-07-27 18:57:06,568 - INFO - Server Certificate [../../pki/server.crt]
+2019-07-27 18:57:06,568 - INFO - Client Certificate [../../pki/client.crt]
+2019-07-27 18:57:06,568 - INFO - Client Key         [../../pki/client.key]
+2019-07-27 18:57:13,174 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2022-07-27 19:01:31,484 - INFO - Starting ETSI103457 python client sample
+2022-07-27 19:01:31,491 - INFO - Server Certificate [../../pki/server.crt]
+2022-07-27 19:01:31,491 - INFO - Client Certificate [../../pki/client.crt]
+2022-07-27 19:01:31,491 - INFO - Client Key         [../../pki/client.key]
+2022-07-27 19:01:38,528 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2019-07-27 19:01:57,444 - INFO - Starting ETSI103457 python client sample
+2019-07-27 19:01:57,455 - INFO - Server Certificate [../../pki/server.crt]
+2019-07-27 19:01:57,455 - INFO - Client Certificate [../../pki/client.crt]
+2019-07-27 19:01:57,455 - INFO - Client Key         [../../pki/client.key]
+2019-07-27 19:02:03,738 - DEBUG - [Connecting] to [172.16.0.242][4027]
+2019-12-27 19:02:25,866 - INFO - Starting ETSI103457 python client sample
+2019-12-27 19:02:25,874 - INFO - Server Certificate [../../pki/server.crt]
+2019-12-27 19:02:25,874 - INFO - Client Certificate [../../pki/client.crt]
+2019-12-27 19:02:25,874 - INFO - Client Key         [../../pki/client.key]
+2019-12-27 19:02:32,595 - DEBUG - [Connecting] to [172.16.0.242][4027]

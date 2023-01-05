@@ -1,0 +1,1264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Toplevel" id="Toplevel">
+    <property name="background">#ffffff</property>
+    <property name="height">600</property>
+    <property name="resizable">none</property>
+    <child>
+      <object class="tk.Frame" id="Main_Frame">
+        <property name="background">#ffffff</property>
+        <property name="height">600</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">nw</property>
+        </layout>
+        <child>
+          <object class="tk.Frame" id="Connection_Frame">
+            <property name="background">#ffffff</property>
+            <property name="height">100</property>
+            <property name="padx">5</property>
+            <property name="pady">5</property>
+            <property name="takefocus">false</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">nw</property>
+              <columns>
+                <column id="4">
+                  <property name="pad">0</property>
+                  <property name="weight">0</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Label" id="Server_IP_Label">
+                <property name="background">#ffffff</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="justify">right</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Server IP</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="padx">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Server_IP_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">center</property>
+                <property name="text" translatable="yes">XXX.XXX.XXX.XXX</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="Server_Port_Label">
+                <property name="background">#ffffff</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="justify">right</property>
+                <property name="relief">flat</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Server Port</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="padx">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Server_Port_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">center</property>
+                <property name="text" translatable="yes">XXXXX</property>
+                <property name="width">7</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="OpenClose_Frame">
+                <property name="background">#ffffff</property>
+                <property name="height">200</property>
+                <property name="takefocus">false</property>
+                <property name="width">200</property>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="padx">115</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="OpenConnection_Button">
+                    <property name="background">#4472c4</property>
+                    <property name="command">on_OpenConnection_Button_clicked</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="justify">left</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Open Connection</property>
+                    <property name="width">30</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">5</property>
+                      <property name="propagate">False</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="CloseConnection_Button">
+                    <property name="background">#ED7D31</property>
+                    <property name="command">on_CloseConnection_Button_clicked</property>
+                    <property name="cursor">based_arrow_down</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="justify">right</property>
+                    <property name="relief">raised</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Close Connection</property>
+                    <property name="width">30</property>
+                    <layout>
+                      <property name="column">2</property>
+                      <property name="padx">10</property>
+                      <property name="propagate">False</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="Dump_Button">
+                    <property name="background">#d95c5c</property>
+                    <property name="command">on_Dump_Button_clicked</property>
+                    <property name="justify">left</property>
+                    <property name="text" translatable="yes">Dump</property>
+                    <layout>
+                      <property name="column">3</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="ServerKillSwitch_Button">
+                    <property name="background">#00ff00</property>
+                    <property name="command">on_ServerKillSwitch_Button_clicked</property>
+                    <property name="foreground">#ff0000</property>
+                    <property name="text" translatable="yes">Server Kill Switch</property>
+                    <layout>
+                      <property name="column">4</property>
+                      <property name="padx">50</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Identity_Frame">
+            <property name="background">#ffffff</property>
+            <property name="height">100</property>
+            <property name="padx">5</property>
+            <property name="pady">5</property>
+            <property name="takefocus">false</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">nw</property>
+            </layout>
+            <child>
+              <object class="tk.Label" id="LTD_ID_Label">
+                <property name="background">#ffffff</property>
+                <property name="text" translatable="yes">LTD Id</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="LTD_ID_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">LTD ID</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="LTD_Role_Label">
+                <property name="background">#ffffff</property>
+                <property name="text" translatable="yes">LTD Role</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="LTD_Role_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">LTD Role</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="LTD_CN_Label">
+                <property name="background">#ffffff</property>
+                <property name="text" translatable="yes">LTD Certificate Name</property>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="LTD_CN_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">LTD Certificate Name</property>
+                <layout>
+                  <property name="column">5</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="LTD_Nonce_Label">
+                <property name="background">#ffffff</property>
+                <property name="text" translatable="yes">LTD Nonce</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="LTD_Nonce_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">LTD Nonce</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Label" id="LTD_Data_Label">
+                <property name="background">#ffffff</property>
+                <property name="text" translatable="yes">LTD Data</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="LTD_Data_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">LTD Data</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+        <child>
+          <object class="tk.Checkbutton" id="Trusted_Checkbutton">
+            <property name="background">#ffffff</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="justify">left</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Trusted Connection</property>
+            <property name="variable">int:TrustedValue</property>
+            <layout>
+              <property name="column">4</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">nw</property>
+            </layout>
+          </object>
+        </child>          
+            
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Session_Frame">
+            <property name="background">#ffffff</property>
+            <property name="height">100</property>
+            <property name="padx">5</property>
+            <property name="pady">5</property>
+            <property name="takefocus">false</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">nw</property>
+              <rows>
+                <row id="0">
+                  <property name="pad">0</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="minsize">0</property>
+                  <property name="pad">0</property>
+                  <property name="weight">0</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Button" id="CreateSession_Button">
+                <property name="background">#4472c4</property>
+                <property name="command">on_CreateSession_Button_clicked</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="foreground">#ffffff</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Create Session</property>
+                <property name="width">39</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Button" id="CloseSession_Button">
+                <property name="background">#4472c4</property>
+                <property name="command">on_CloseSession_Button_clicked</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="foreground">#ffffff</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Close Session</property>
+                <property name="width">20</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="CloseSession_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Session ID</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="padx">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>          
+            <child>
+              <object class="tk.Label" id="SessionLabel">
+                <property name="background">#ffffff</property>
+                <property name="takefocus">false</property>
+                <property name="width">3</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="ActiveSession_Frame">
+            <property name="background">#ffffff</property>
+            <property name="cursor">arrow</property>
+            <property name="height">100</property>
+            <property name="padx">4</property>
+            <property name="pady">5</property>
+            <property name="relief">flat</property>
+            <property name="takefocus">true</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">nw</property>
+            </layout>
+            <child>
+              <object class="tk.Button" id="ActiveSession_Button">
+                <property name="background">#4472c4</property>
+                <property name="disabledforeground">#ffffff</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">left</property>
+                <property name="state">disabled</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Active Session</property>
+                <property name="width">14</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="ActiveSession_Entry">
+                <property name="background">#a7bce3</property>
+                <property name="font">TkFixedFont</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Session ID</property>
+                <property name="validate">none</property>
+                <property name="width">21</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Action_Frame">
+            <property name="background">#ffffff</property>
+            <property name="height">500</property>
+            <property name="padx">5</property>
+            <property name="pady">5</property>
+            <property name="takefocus">false</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+              <property name="sticky">nw</property>
+            </layout>
+            <child>
+              <object class="tk.Frame" id="Object_Frame">
+                <property name="background">#ffffff</property>
+                <property name="height">500</property>
+                <property name="takefocus">false</property>
+                <property name="width">225</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                  <columns>
+                    <column id="0">
+                      <property name="minsize">14</property>
+                    </column>
+                  </columns>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="CreateObject_Button">
+                    <property name="background">#4472c4</property>
+                    <property name="command">on_CreateObject_Button_clicked</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Create Object</property>
+                    <property name="width">39</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="ObjectAction_Frame">
+                    <property name="background">#ffffff</property>
+                    <property name="height">200</property>
+                    <property name="takefocus">false</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Button" id="ActiveObject_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="disabledforeground">#ffffff</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="state">disabled</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Active Object</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="ActiveObject_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Object ID</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="PutObjectValue_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_PutObjectValue_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Put Object Value</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="PutObjectValue_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Object Value</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="GetObjectValue_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_GetObjectValue_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Get Object Value</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="pady">20</property>
+                          <property name="propagate">True</property>
+                          <property name="row">2</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="GetObjectValue_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Object ID</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">2</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="Archive_Frame">
+                <property name="background">#ffffff</property>
+                <property name="height">500</property>
+                <property name="padx">2</property>
+                <property name="takefocus">false</property>
+                <property name="width">225</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="CreateArchive_Button">
+                    <property name="background">#4472c4</property>
+                    <property name="command">on_CreateArchive_Button_clicked</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Create Archive (file)</property>
+                    <property name="width">39</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="Archive_Action_Frame">
+                    <property name="background">#ffffff</property>
+                    <property name="height">200</property>
+                    <property name="takefocus">false</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Frame" id="CloseArchive_Frame">
+                        <property name="height">200</property>
+                        <property name="takefocus">true</property>
+                        <property name="width">200</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                        </layout>
+                        <child>
+                          <object class="tk.Button" id="CloseArchive_Button">
+                            <property name="background">#4472c4</property>
+                            <property name="command">on_CloseArchive_Button_clicked</property>
+                            <property name="font">TkDefaultFont</property>
+                            <property name="foreground">#ffffff</property>
+                            <property name="takefocus">false</property>
+                            <property name="text" translatable="yes">Close Archive</property>
+                            <property name="width">14</property>
+                            <layout>
+                              <property name="column">0</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="tk.Entry" id="CloseArchive_Entry">
+                            <property name="background">#a7bce3</property>
+                            <property name="font">TkFixedFont</property>
+                            <property name="justify">left</property>
+                            <property name="text" translatable="yes">Container ID</property>
+                            <property name="width">21</property>
+                            <layout>
+                              <property name="column">1</property>
+                              <property name="padx">2</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                              <property name="sticky">w</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Frame" id="Archive_Tools_Frame">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="pady">20</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                        <child>
+                          <object class="tk.Button" id="ActiveArchive_Button">
+                            <property name="background">#4472c4</property>
+                            <property name="disabledforeground">#ffffff</property>
+                            <property name="font">TkDefaultFont</property>
+                            <property name="foreground">#ffffff</property>
+                            <property name="state">disabled</property>
+                            <property name="takefocus">false</property>
+                            <property name="text" translatable="yes">Active Archive</property>
+                            <property name="width">14</property>
+                            <layout>
+                              <property name="column">0</property>
+                              <property name="propagate">True</property>
+                              <property name="row">1</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="tk.Entry" id="ActiveArchive_Entry">
+                            <property name="background">#a7bce3</property>
+                            <property name="font">TkFixedFont</property>
+                            <property name="justify">left</property>
+                            <property name="text" translatable="yes">Container ID</property>
+                            <property name="width">21</property>
+                            <layout>
+                              <property name="column">1</property>
+                              <property name="padx">2</property>
+                              <property name="propagate">True</property>
+                              <property name="row">1</property>
+                              <property name="sticky">w</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="tk.Button" id="Archive_Button">
+                            <property name="background">#4472c4</property>
+                            <property name="command">on_Archive_Button_clicked</property>
+                            <property name="font">TkDefaultFont</property>
+                            <property name="foreground">#ffffff</property>
+                            <property name="takefocus">false</property>
+                            <property name="text" translatable="yes">Archive</property>
+                            <property name="width">14</property>
+                            <layout>
+                              <property name="column">0</property>
+                              <property name="propagate">True</property>
+                              <property name="row">2</property>
+                              <property name="sticky">nw</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="tk.Entry" id="Archive_Entry">
+                            <property name="background">#a7bce3</property>
+                            <property name="font">TkFixedFont</property>
+                            <property name="justify">left</property>
+                            <property name="text" translatable="yes">Data</property>
+                            <property name="width">21</property>
+                            <layout>
+                              <property name="column">1</property>
+                              <property name="padx">2</property>
+                              <property name="propagate">True</property>
+                              <property name="row">2</property>
+                              <property name="sticky">w</property>
+                            </layout>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="Storage_Frame">
+                <property name="background">#ffffff</property>
+                <property name="height">500</property>
+                <property name="takefocus">false</property>
+                <property name="width">225</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+                <child>
+                  <object class="ttk.Frame" id="Storage_Management_Frame">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Button" id="CreateStorage_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_CreateStorage_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Create Storage</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="CreateStorage_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Container Name</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="DeleteStorage_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_DeleteStorage_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Delete Storage</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="DeleteStorage_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Container ID</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Frame" id="Storage_Action_Frame">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="pady">20</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Button" id="ActiveStorage_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="disabledforeground">#ffffff</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="state">disabled</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Active Storage</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="ActiveStorage_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Container ID</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="StoreData_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_StoreData_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Store Data</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="StoreData_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Data</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="GetStorageValue_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_GetStorageValue_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Get Storage Value</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">2</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="GetStorageValue_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Object ID</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">2</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="Search_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_Search_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Search</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">3</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="Search_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Object Value</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">3</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Frame" id="Storage_Tools_Frame">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Button" id="GetStorage_Button">
+                        <property name="background">#4472c4</property>
+                        <property name="command">on_GetStorage_Button_clicked</property>
+                        <property name="font">TkDefaultFont</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Get Storage</property>
+                        <property name="width">14</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">nw</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Entry" id="GetStorage_Entry">
+                        <property name="background">#a7bce3</property>
+                        <property name="font">TkFixedFont</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">Container Name</property>
+                        <property name="width">21</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="padx">2</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">w</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="Crypto_Frame">
+                <property name="background">#ffffff</property>
+                <property name="height">500</property>
+                <property name="takefocus">false</property>
+                <property name="width">225</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nw</property>
+                </layout>
+                <child>
+                  <object class="tk.Label" id="Label_6">
+                    <property name="background">#ffffff</property>
+                    <property name="pady">114</property>
+                    <property name="takefocus">false</property>
+                    <property name="width">14</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="GetTrustedTimestamp_Button">
+                    <property name="background">#4472c4</property>
+                    <property name="command">on_GetTrustedTimestamp_Button_clicked</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Get Trusted TS</property>
+                    <property name="width">14</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Entry" id="GetTrustedTimestamp_Entry">
+                    <property name="background">#a7bce3</property>
+                    <property name="font">TkFixedFont</property>
+                    <property name="justify">left</property>
+                    <property name="text" translatable="yes">Data</property>
+                    <property name="width">21</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">2</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="GetRandom_Button">
+                    <property name="background">#4472c4</property>
+                    <property name="command">on_GetRandom_Button_clicked</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Get Random</property>
+                    <property name="width">14</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Entry" id="GetRandom_Entry">
+                    <property name="background">#a7bce3</property>
+                    <property name="font">TkFixedFont</property>
+                    <property name="justify">left</property>
+                    <property name="text" translatable="yes">Length</property>
+                    <property name="width">21</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">2</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Button" id="GenerateEncryptionKey_Button">
+                    <property name="background">#4472c4</property>
+                    <property name="command">on_GenerateEncryptionKey_Button_clicked</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="takefocus">false</property>
+                    <property name="text" translatable="yes">Gen. Enc. Key</property>
+                    <property name="width">14</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                      <property name="sticky">nw</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Combobox" id="GenerateEncryptionKey_Entry">
+                    <property name="justify">left</property>
+                    <property name="width">21</property>
+                    <property name="values">RSA1024 RSA2048 RSA4096 AES-128 AES-256</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">2</property>
+                      <property name="propagate">True</property>
+                      <property name="row">3</property>
+                      <property name="sticky">w</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.LabelFrame" id="Response_Frame">
+            <property name="background">#ffd583</property>
+            <property name="font">TkFixedFont</property>
+            <property name="height">500</property>
+            <property name="labelanchor">nw</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Response</property>
+            <property name="width">500</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+              <property name="sticky">nsew</property>
+              <rows>
+                <row id="0">
+                  <property name="weight">1</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="weight">1</property>
+                </column>
+              </columns>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
